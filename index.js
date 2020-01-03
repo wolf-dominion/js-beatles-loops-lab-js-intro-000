@@ -16,7 +16,9 @@ function johnLennonFacts(array)
 {
   var i = 0;
   var ex = "!!!";
-  while(i < array.length) // was originally doing <= which caused it to go one over the length of the array, since the array starts at 0
+   // was originally doing <= which caused it to go one over the length of the array, since the array starts at 0
+  
+  while(i < array.length)
   {
     array[i] = array[i].concat(ex);
     i++;
@@ -32,6 +34,7 @@ function iLoveTheBeatles(num)
   do
   {
     emptyArray2.push("I love the Beatles!"); // originally did emptyArray2[num] = "I love the...", but then figured it wanted it put in only once 
+   // emptyArray2[num] = "I love the Beatles!";
     num++;
   }
   while (num < 15);
